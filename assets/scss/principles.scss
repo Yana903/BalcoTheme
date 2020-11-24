@@ -1,0 +1,44 @@
+.sectionPrinciples {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.gridPrinc {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    justify-items: stretch;
+
+    .gridItem {
+        display: flex;
+        box-shadow: none;
+        padding: 0;
+    }
+}
+
+.cardPrinc, 
+.cardImage, 
+.cardDescription {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardDescription {
+    max-width: 200px;
+}
+
+.cardImage {
+    max-width: 105px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.cardDescription p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+}
