@@ -47,7 +47,7 @@ const theme = createMuiTheme({
 });
 
 theme.typography.h1 = {
-	fontSize: '40px',
+	fontSize: '56px',
 	marginTop: '0',
 	marginBottom: '0'
 };
@@ -85,11 +85,11 @@ const SharedContainer = props => {
 
 	return (
 		<ThemeProvider theme={theme}>
-			<Fragment>
+			<div className="my-wrapper">
 				<Header {...props} />
 				{children}
 				{!hideFooter && <Footer settings={settings} />}
-			</Fragment>
+			</div>
 		</ThemeProvider>
 	);
 };

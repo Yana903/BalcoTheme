@@ -47,7 +47,7 @@ const theme = createMuiTheme({
 });
 
 theme.typography.h1 = {
-	fontSize: '40px',
+	fontSize: '56px',
 	marginTop: '0',
 	marginBottom: '0'
 };
@@ -84,8 +84,8 @@ const SharedContainer = props => {
 		ThemeProvider,
 		{ theme: theme },
 		React.createElement(
-			Fragment,
-			null,
+			'div',
+			{ className: 'my-wrapper' },
 			React.createElement(Header, props),
 			children,
 			!hideFooter && React.createElement(Footer, { settings: settings })
