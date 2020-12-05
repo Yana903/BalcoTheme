@@ -63,10 +63,51 @@ hr.separator {
     margin: 1rem 0;
 }
 
-.hero-body,
 .section {
-    padding: 1.5rem;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+p {
+    font-family: 'Poppins';
+}
+
+h1 {
+    font-family: 'Oswald';
+	font-size: 50px;
+	font-weight: 600;
+	line-height: 1.2;
+	margin-top: 0;
+    margin-bottom: 0
+}
+
+.layout {
+    width: 100%;
+    display: flex;
+}
+
+.layout__item {
+    display: flex;
+}
+
+.container-balco {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+}
+
+// .hero-body,
+// .section {
+//     padding: 1.5rem;
+// }
 
 .box {
     border-radius: 0;

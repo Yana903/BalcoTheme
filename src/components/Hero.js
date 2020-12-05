@@ -1,44 +1,25 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
-import { Link } from 'react-router-dom';
-// import Container from '@material-ui/core/Container';
+import { Link } from "react-router-dom";
 import Button from '@material-ui/core/Button';
 
 const Hero = () => {
-	return (
-		<section className="sectionHero">
-			<div className="heroBackground"></div>
-			<div className="heroForeground">
-				{/* <Container style={{fontSize: '40px', marginTop: '0'}}> */}
-				<div className="container">
-					<div className="heroInform">
-						<Typography
-							variant="h1"
-							style={{ fontSize: '40px', marginTop: '0' }}
-						>
-							Надёжный производтель пластиковой тары и упаковки
-						</Typography>
-						<p>
-							В сфере промышленной упаковки мы работаем уже 10 лет и имеем
-							богатый опыт, который позволяет нам качественно консультировать
-							наших клиентов и подбирать им наилучший вариант упаковки.
-						</p>
-						<Button
-							variant="contained"
-							component={Link}
-							to="/goods"
-							color="primary"
-						>
-							Перейти в каталог
-						</Button>
-					</div>
-				</div>
-				<div className="heroImg">
-					<img src="/assets/images/img-tara.png" alt="imgHero" />
-				</div>
-			</div>
-		</section>
-	);
+    return (
+        <div className='section section_hero'>
+            <div className='container-balco'>
+                <div className='layout layout_hero'>
+                    <div className='layout-item'>
+                        <div className='heading-primary'>
+                            <h1>Пластиковая тара с доставкой по Украине</h1>
+                        </div>
+                    </div>
+                    <div className='layout-item'>
+                        maks
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
 };
 
 export default Hero;

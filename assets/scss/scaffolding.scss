@@ -14,12 +14,12 @@ body {
     padding: 0;
     min-width: 320px;
     width: 100%;
-    font-family: 'Comfortaa', cursive;
+    // font-family: 'Poppins';
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 1.5;
-    color: $choco;
+    font-size: 20px;
+    line-height: 26px;
+    color: #1A2141;;
     background-color: $bg;
     text-rendering: optimizeLegibility;
 }
@@ -30,6 +30,7 @@ body {
     margin-bottom: -20px;
     transition: margin .2s ease-in-out;
 }
+
 
 #app {
     @media screen and (min-width: $vtablet-width) {
@@ -123,7 +124,12 @@ a {
     color: #fff;
     border-radius: 4px;
     border: none;
-    background-color: $choco;
+    background-color: #F7B111;
+    &:hover,
+    &:active,
+    &:focus {
+
+    }
     &.is-primary,
     &.is-primary[disabled] {
         background-color: $choco;
@@ -134,21 +140,29 @@ a {
     }
     &.is-primary.is-hovered,
     &.is-primary:hover,
-    &:hover {
-        background-color: $choco-light;
+    &.is-primary:focus,
+    &.is-primary:active,
+    &.button_search,
+    &.button_search:focus,
+    &.button_search:active,
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: #f7a709;
         color: #fff;
+        border-color: #d69106;
     }
     &:focus {
-        outline: transparent;
+        outline: #fff;
     }
     &_light {
         background-color: transparent;
-        border: 1px solid $choco;
+        border: 1px solid #d69106;
         border-radius: 3px;
         color: $choco;
         &:hover {
             color: #fff;
-            background: #4E372A;
+            background: #d69106;
         }
     }
     &_cart-delete {

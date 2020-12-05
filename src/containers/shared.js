@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { themeSettings } from '../lib/settings';
-import Header from '../components/header';
+import Header from '../components/header/header';
 import Footer from '../components/footer';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
@@ -46,15 +46,11 @@ const theme = createMuiTheme({
 	}
 });
 
-theme.typography.h1 = {
-	fontSize: '56px',
-	marginTop: '0',
-	marginBottom: '0'
-};
-
 theme.typography.h2 = {
-	fontSize: '32px',
-	fontWeight: '300',
+	fontFamily: 'Oswald',
+	fontSize: '56px',
+	fontWeight: '600',
+	lineHeight: '67.2',
 	marginTop: '0',
 	marginBottom: '0'
 };

@@ -90,10 +90,16 @@
     }
 }
 
+.cart__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .card__info_title {
     font-size: 16px;
-    font-weight: 700;
-    color: #000;
+    font-weight: 400;
+    color: #fff;
     line-height: 17px;
 }
 

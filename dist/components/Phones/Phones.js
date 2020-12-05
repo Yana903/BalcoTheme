@@ -12,7 +12,14 @@ const useStyles = makeStyles(theme => ({
     minWidth: 120
   },
   selectEmpty: {
-    marginTop: theme.spacing(0)
+    marginTop: theme.spacing(0),
+    color: '#fff',
+    '&::before': {
+      border: 'none'
+    },
+    '&:hover': {
+      border: 'none'
+    }
   },
   phonesBox: {
     display: "flex",
@@ -44,7 +51,7 @@ export default function SimpleSelect() {
     React.createElement(
       'div',
       { className: classes.phones },
-      React.createElement(PhoneIphone, null),
+      React.createElement(PhoneIphone, { style: { color: '#fff' } }),
       React.createElement(
         FormControl,
         { className: classes.formControl },
@@ -78,11 +85,6 @@ export default function SimpleSelect() {
           )
         )
       )
-    ),
-    React.createElement(
-      Button,
-      { variant: 'contained', color: 'primary', marginLeft: '20px' },
-      '\u0417\u0430\u043A\u0430\u0437\u0430\u0442\u044C \u0437\u0432\u043E\u043D\u043E\u043A'
     )
   );
 }

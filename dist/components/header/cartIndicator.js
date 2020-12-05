@@ -24,7 +24,7 @@ const CartIcon = ({ cartIsActive }) =>
 // 	alt={text.cart}
 // 	title={text.cart}
 // />
-React.createElement(LocalMall, { style: { fontSize: 50, marginLeft: '-5px' } });
+React.createElement(LocalMall, { style: { color: '#f7a709', fontSize: 40, marginLeft: '-5px' } });
 
 export default class CartIndicator extends React.PureComponent {
 	constructor(props) {

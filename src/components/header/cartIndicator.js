@@ -20,7 +20,7 @@ const CartIcon = ({ cartIsActive }) => (
 	// 	alt={text.cart}
 	// 	title={text.cart}
 	// />
-	<LocalMall style={{ fontSize: 50, marginLeft: '-5px' }} />
+	<LocalMall style={{ color: '#f7a709', fontSize: 40, marginLeft: '-5px' }} />
 );
 
 export default class CartIndicator extends React.PureComponent {

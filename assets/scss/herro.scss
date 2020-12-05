@@ -1,68 +1,26 @@
-.sectionHero {
-    width: 100%;
-    position: relative;
-}
-
-.heroBackground {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-image: url("/assets/images/myBg-6.jpg");
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.heroForeground {
-    position: relative;
-    padding-top: 40px;
+.section_hero {
+    background: #fff;
+    height: 100vh;
+    padding-top: 20px;
     padding-bottom: 40px;
-    min-height: 430px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+}
+
+.layout_hero {
+    flex-direction: row;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-}
 
-.heroImg {
-    position: absolute;
-    right: 50px;
-    top: 160px;
-    width: 500px;
-    height: 400px;
+    .layout-item {
+        width: 50%;
+        border: 1px solid #000;
 
-    img {
-        width: 100%;
+        &:first-of-type {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
     }
 }
 
-.heroInform {
-    max-width: 653px;
 
-    h1 {
-        font-family: 'Oswald';
-        font-weight: 600;
-        text-shadow: 0 1px 0 #fff;
-        line-height: 67.2px;
-        margin-bottom: 25px;
-    }
-}
 
-.heroInform p {
-    font-size: 18px;
-    line-height: 28px;
-    color: #000;
-    margin: 0 0 30px;
-    text-shadow: 0 1px 0 #fff, 0 0 0 #000;
-}
