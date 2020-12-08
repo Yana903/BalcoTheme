@@ -4,11 +4,7 @@
     align-items: flex-start;
     justify-content: center;
     padding-top: 10px;
-
-    // h1 {
-    //     margin-top: 0;
-    //     margin-bottom: 10px;
-    // }
+    margin-bottom: 24px;
 }
 
 .heading-primary.inverce {
@@ -18,8 +14,10 @@
 
 .heading-secondary {
     display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin-bottom: 20px;
+    color: #282828;
 }

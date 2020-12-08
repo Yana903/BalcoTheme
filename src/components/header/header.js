@@ -333,7 +333,7 @@ export default class Header extends React.Component {
 						<div className="header-bottom__layout">
 						<div className="header-bottom__layout_item">
 						<div className="header__navigation">
-							<button
+							{/* <button
 								type="button"
 								onClick={this.catalogToggle}
 								className="navigation__catalog-button button button_catalog"
@@ -346,7 +346,7 @@ export default class Header extends React.Component {
 									title=""
 								/>
 								Catalog
-							</button>
+							</button> */}
 							<nav className="navigation__menu">
 								<HeaderBottomMenu items={themeSettings.footer_menu_2_items} />
 							</nav>
@@ -446,7 +446,7 @@ export default class Header extends React.Component {
 					<button
 						type="button"
 						onClick={this.catalogToggle}
-						className="navigation__catalog-button button button_catalog is-hidden-mobile"
+						className="navigation__catalog-button button is-hidden-mobile"
 					>
 						<BurgerButton className="navbar-burger navbar-burger_catalog is-active" />
 						Catalog

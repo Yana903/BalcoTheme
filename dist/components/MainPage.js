@@ -1,9 +1,10 @@
 import React, { Fragment } from 'react';
 // import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import Hero from './Hero';
-import Principles from './Principles';
-import CathalogMain from './CathalogMain/CathalogMain';
-import Consulting from '../Consulting/Consulting';
+import { themeSettings } from '../lib/settings';
+import HomeSlider from '../components/homeSlider';
+// import CathalogMain from './CathalogMain/CathalogMain';
+// import Consulting from '../Consulting/Consulting';
 // import Map from "../Map/Map";
 // import Footer from "../Footer/Footer";
 
@@ -103,9 +104,7 @@ const MainPage = () => {
 		Fragment,
 		null,
 		React.createElement(Hero, null),
-		React.createElement(Principles, null),
-		React.createElement(CathalogMain, { containers: containers }),
-		React.createElement(Consulting, null)
+		React.createElement(HomeSlider, { images: themeSettings.home_slider })
 	);
 };
 

@@ -13,30 +13,32 @@ const renderItem = item => React.createElement(
 		LazyLoad,
 		null,
 		React.createElement(
-			NavLink,
-			{ to: item.path || '' },
+			'div',
+			{
+				className: 'image-gallery__item',
+				style: {
+					color: themeSettings.home_slider_color || '#000'
+					// backgroundImage: `url(${item.original})`
+				}
+			},
 			React.createElement(
 				'div',
-				{
-					className: 'image-gallery__item',
-					style: {
-						color: themeSettings.home_slider_color || '#fff',
-						backgroundImage: `url(${item.original})`
-					}
-				},
-				React.createElement(
-					'div',
-					{ className: 'image-gallery__title' },
-					item.title
-				),
-				React.createElement(
-					'div',
-					{ className: 'image-gallery__description' },
-					item.description,
-					item.description && item.description.length > 0 && React.createElement(
+				{ className: 'image-gallery__title' },
+				item.title
+			),
+			React.createElement(
+				'div',
+				{ className: 'image-gallery__description' },
+				item.image,
+				item.description,
+				item.description && item.description.length > 0 && React.createElement(
+					NavLink,
+					{ to: item.path || '' },
+					React.createElement(
 						'button',
 						{
 							type: 'button',
+							to: item.path || '',
 							className: 'image-gallery__button button button_gallery'
 						},
 						'Go'
@@ -48,6 +50,7 @@ const renderItem = item => React.createElement(
 );
 
 const HomeSlider = ({ images }) => {
+	// debugger;
 	if (images && images.length > 0) {
 		const items = images.map(item => ({
 			original: `/assets/images/${item.image}`,
@@ -60,6 +63,16 @@ const HomeSlider = ({ images }) => {
 		return React.createElement(
 			'section',
 			{ className: 'home-slider section-container' },
+			React.createElement(
+				'div',
+				{ className: 'heading-secondary' },
+				React.createElement(
+					'h2',
+					null,
+					'\u041D\u043E\u0432\u0430\u044F \u043F\u0440\u043E\u0434\u0443\u043A\u0446\u0438\u044F'
+				)
+			),
+			React.createElement('hr', { className: 'divider' }),
 			React.createElement(ImageGallery, {
 				items: items,
 				lazyLoad: true,

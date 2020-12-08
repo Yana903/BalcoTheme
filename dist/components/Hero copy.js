@@ -42,7 +42,7 @@ const Hero = () => {
                     React.createElement(
                         'button',
                         {
-                            type: 'button', style: { fontSize: '20px' }
+                            type: 'button'
                             // onClick={this.catalogToggle}
                             , className: 'navigation__catalog-button button button_catalog'
                         },

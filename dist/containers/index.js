@@ -15,8 +15,9 @@ import MapYand from '../components/mapYand';
 import Hero from '../components/Hero';
 import Principles from '../components/Principles';
 import CathalogMain from '../components/CathalogMain/CathalogMain';
-import Consulting from '../components/Consulting/Consulting';
+// import Consulting from '../components/Consulting/Consulting';
 import Map from '../components/Map/Map';
+import MainPage from '../components/MainPage';
 
 const containers = {
 	categories: [{
@@ -106,108 +107,7 @@ const IndexContainer = props => {
 			ogTitle: pageDetails.meta_title,
 			ogDescription: pageDetails.meta_description
 		}),
-		React.createElement(Hero, null),
-		React.createElement(Principles, null),
-		React.createElement(CathalogMain, { containers: containers }),
-		React.createElement(Consulting, null),
-		React.createElement(Map, null),
-		pageDetails.content && pageDetails.content.length > 10 && React.createElement(
-			'section',
-			{ className: 'section' },
-			React.createElement(
-				'div',
-				{ className: 'container' },
-				React.createElement(
-					'div',
-					{ className: 'content' },
-					React.createElement('div', {
-						dangerouslySetInnerHTML: {
-							__html: pageDetails.content
-						}
-					})
-				)
-			)
-		),
-		React.createElement(
-			'section',
-			{ className: 'categories section-container' },
-			React.createElement(
-				'h2',
-				{ className: 'categories__title section__title' },
-				'Categories'
-			),
-			React.createElement(CategoriesGallery, { categories: categories })
-		),
-		React.createElement(
-			'section',
-			{ className: 'popular section-container' },
-			React.createElement(
-				'h2',
-				{ className: 'popular__title section__title' },
-				themeSettings.home_products_title
-			),
-			React.createElement(
-				LazyLoad,
-				null,
-				React.createElement(GalleryProducts, {
-					sku: themeSettings.home_products_sku,
-					sort: themeSettings.home_products_sort,
-					limit: themeSettings.home_products_limit,
-					settings: settings,
-					addCartItem: addCartItem
-				})
-			)
-		),
-		React.createElement(
-			'section',
-			{ className: 'big-banner section-container' },
-			React.createElement(
-				LazyLoad,
-				null,
-				React.createElement(BigBanner, null)
-			)
-		),
-		themeSettings.show_viewed_products && React.createElement(
-			LazyLoad,
-			null,
-			React.createElement(ViewedProducts, {
-				settings: settings,
-				addCartItem: addCartItem,
-				limit: themeSettings.limit_viewed_products || 6
-			})
-		),
-		React.createElement(
-			'section',
-			{ className: 'contacts section-container' },
-			React.createElement(
-				'h2',
-				{ className: 'contacts__title_content section__title' },
-				'Contacts'
-			),
-			React.createElement(
-				'div',
-				{ className: 'contacts__content' },
-				React.createElement(
-					LazyLoad,
-					null,
-					React.createElement(HomeContacts, { settings: settings })
-				)
-			),
-			React.createElement(
-				'h2',
-				{ className: 'contacts__title_map section__title' },
-				'Map'
-			),
-			React.createElement(
-				'div',
-				{ className: 'contacts__map' },
-				React.createElement(
-					LazyLoad,
-					null,
-					React.createElement(MapYand, null)
-				)
-			)
-		)
+		React.createElement(MainPage, null)
 	);
 };
 

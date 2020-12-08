@@ -293,7 +293,7 @@
 .header__bottom {
     @media (min-width: $tablet-width) {
         display: flex;
-        padding: 0 calc(50% - 585px);
+        // padding: 0 calc(50% - 585px);
         justify-content: space-between;
         border-top: 1px solid rgba(255, 255, 255, 0.2);
     }

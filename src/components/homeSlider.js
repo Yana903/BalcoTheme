@@ -9,33 +9,38 @@ import storeSettings from '../../../config/store';
 const renderItem = item => (
 	<div className="image-gallery-image">
 		<LazyLoad>
-			<NavLink to={item.path || ''}>
+			{/* <NavLink to={item.path || ''}> */}
 				<div
 					className="image-gallery__item"
 					style={{
-						color: themeSettings.home_slider_color || '#fff',
-						backgroundImage: `url(${item.original})`
+						color: themeSettings.home_slider_color || '#000',
+						// backgroundImage: `url(${item.original})`
 					}}
 				>
 					<div className="image-gallery__title">{item.title}</div>
 					<div className="image-gallery__description">
+						{item.image}
 						{item.description}
 						{item.description && item.description.length > 0 && (
-							<button
-								type="button"
-								className="image-gallery__button button button_gallery"
-							>
-								Go
-							</button>
+							<NavLink to={item.path || ''}>
+								<button
+									type="button"
+									to={item.path || ''}
+									className="image-gallery__button button button_gallery"
+								>
+									Go
+								</button>
+							</NavLink>
 						)}
 					</div>
 				</div>
-			</NavLink>
+			{/* </NavLink> */}
 		</LazyLoad>
 	</div>
 );
 
 const HomeSlider = ({ images }) => {
+	// debugger;
 	if (images && images.length > 0) {
 		const items = images.map(item => ({
 			original: `/assets/images/${item.image}`,
@@ -47,6 +52,10 @@ const HomeSlider = ({ images }) => {
 
 		return (
 			<section className="home-slider section-container">
+					<div className='heading-secondary'>
+						<h2>Новая продукция</h2>
+					</div>
+					<hr className='divider'/>
 				<ImageGallery
 					items={items}
 					lazyLoad

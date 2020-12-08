@@ -15,8 +15,9 @@ import MapYand from '../components/mapYand';
 import Hero from '../components/Hero';
 import Principles from '../components/Principles';
 import CathalogMain from '../components/CathalogMain/CathalogMain';
-import Consulting from '../components/Consulting/Consulting';
+// import Consulting from '../components/Consulting/Consulting';
 import Map from '../components/Map/Map';
+import MainPage from '../components/MainPage';
 
 const containers = {
 	categories: [
@@ -136,15 +137,15 @@ const IndexContainer = props => {
 
 			{/* <HomeSlider images={themeSettings.home_slider} /> */}
 
-			<Hero />
-			<Principles />
+			<MainPage />
+			{/* <Principles />
 			<CathalogMain containers={containers} />
 			<Consulting />
-			<Map />
+			<Map /> */}
 
-			{pageDetails.content && pageDetails.content.length > 10 && (
-				<section className="section">
-					<div className="container">
+			{/* {pageDetails.content && pageDetails.content.length > 10 && (
+				// <section className="section">
+				// 	<div className="container">
 						<div className="content">
 							<div
 								dangerouslySetInnerHTML={{
@@ -152,11 +153,11 @@ const IndexContainer = props => {
 								}}
 							/>
 						</div>
-					</div>
-				</section>
-			)}
+				// 	</div>
+				// </section>
+			)} */}
 
-			<section className="categories section-container">
+			{/* <section className="categories section-container">
 				<h2 className="categories__title section__title">Categories</h2>
 
 				<CategoriesGallery categories={categories} />
@@ -206,7 +207,7 @@ const IndexContainer = props => {
 						<MapYand />
 					</LazyLoad>
 				</div>
-			</section>
+			</section> */}
 		</Fragment>
 	);
 };

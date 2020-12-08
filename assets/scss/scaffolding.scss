@@ -26,7 +26,7 @@ body {
 
 body {
     position: relative;
-    overflow-y: scroll;
+    // overflow-y: scroll;
     margin-bottom: -20px;
     transition: margin .2s ease-in-out;
 }
@@ -82,7 +82,7 @@ a {
 }
 
 .section-container {
-    padding: 0 calc(50% - 144px);
+    padding: 0 calc(50% - 100px);
     @media screen and (min-width: $mintablet-width) {
         padding: 0 calc(50% - 330px);
     }
@@ -111,20 +111,21 @@ a {
     box-sizing: border-box;
     position: relative;
     display: inline-block;
-    min-height: 40px;
+    min-height: 62px;
+    min-width: 270px;
     text-decoration: none;
-    padding: 14px 21px 13px;
-    font-family: 'Comfortaa', cursive;
+    padding: 10px 16px;
+    font-family: 'Poppins';
     font-size: 12px;
     line-height: 13px;
     font-weight: bold;
-    max-width: 100%;
     text-align: center;
     vertical-align: middle;
     color: #fff;
     border-radius: 4px;
     border: none;
-    background-color: #F7B111;
+    background-color: #5F9F0D
+    ;
     &:hover,
     &:active,
     &:focus {

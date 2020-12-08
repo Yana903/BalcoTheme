@@ -345,22 +345,6 @@ export default class Header extends React.Component {
 									'div',
 									{ className: 'header__navigation' },
 									React.createElement(
-										'button',
-										{
-											type: 'button',
-											onClick: this.catalogToggle,
-											className: 'navigation__catalog-button button button_catalog'
-										},
-										React.createElement(BurgerButton, { className: 'navbar-burger navbar-burger_catalog is-hidden-mobile' }),
-										React.createElement('img', {
-											src: '/assets/images/icons/icon_catalog.svg',
-											className: 'catalog__icon is-hidden-tablet',
-											alt: '',
-											title: ''
-										}),
-										'Catalog'
-									),
-									React.createElement(
 										'nav',
 										{ className: 'navigation__menu' },
 										React.createElement(HeaderBottomMenu, { items: themeSettings.footer_menu_2_items })
@@ -479,7 +463,7 @@ export default class Header extends React.Component {
 					{
 						type: 'button',
 						onClick: this.catalogToggle,
-						className: 'navigation__catalog-button button button_catalog is-hidden-mobile'
+						className: 'navigation__catalog-button button is-hidden-mobile'
 					},
 					React.createElement(BurgerButton, { className: 'navbar-burger navbar-burger_catalog is-active' }),
 					'Catalog'
