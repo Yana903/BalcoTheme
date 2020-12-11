@@ -3,10 +3,10 @@ import Typography from '@material-ui/core/Typography';
 import { Link } from "react-router-dom";
 import Button from '@material-ui/core/Button';
 
-const Hero = () => {
+const Herro = () => {
     return React.createElement(
-        'div',
-        { className: 'section section_hero' },
+        'section',
+        { className: 'section-hero' },
         React.createElement(
             'div',
             { className: 'container-balco' },
@@ -63,4 +63,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export default Herro;

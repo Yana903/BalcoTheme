@@ -1,42 +1,37 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
-import Button from "@material-ui/core/Button";
-import InputMask from "react-input-mask";
-
+import MaskedInput from "./MaskedInput"
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
     "& > *": {
       margin: theme.spacing(1),
       width: "25ch",
     },
-  },
+    '& .MuiInputBase-input': {
+      height: "15px",
+    },
+    '& .MuiFormLabel-root': {
+      fontSize: "15px"
+    },
+  }
 }));
 
 export default function BasicTextFields() {
   const classes = useStyles();
 
   return (
-    <form className={classes.root} noValidate autoComplete="off">
-      <TextField id="outlined-basic" label="Имя" variant="outlined" />
-      {/* <InputMask
-        mask="(+380)99-999-99-99"
-        // value={props.value}
-        // onChange={props.onChange}
-      > */}
-        {(inputProps) => (
-          <TextField
-            id="outlined-basic"
-            label="Телефон"
-            type="tel"
-            variant="outlined"
-          />
-        )}
-      {/* </InputMask> */}
-      <Button variant="contained" color="primary">
+    <form className={classes.root} noValidate autoComplete="off" >
+      <TextField id="outlined-basic" label="Имя" variant="outlined" color="primary"/>
+      <MaskedInput />
+      <button class="button image-gallery__button">
         Нужна консультация
-      </Button>
+      </button>
     </form>
   );
 }

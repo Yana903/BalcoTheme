@@ -4,11 +4,12 @@ import { themeSettings } from '../lib/settings';
 import Header from '../components/header/header';
 import Footer from '../components/footer';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 
 const theme = createMuiTheme({
 	palette: {
 		primary: {
-			main: '#26a69a'
+			main: '#5F9F0D'
 		},
 		secondary: {
 			main: '#689f38'
@@ -31,6 +32,11 @@ const theme = createMuiTheme({
 		MuiButton: {
 			root: {
 				fontSize: '12px'
+			}
+		},
+		MuiInput: {
+			root: {
+				height: '15px'
 			}
 		},
 		MuiSelect: {

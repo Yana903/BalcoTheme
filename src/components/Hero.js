@@ -3,9 +3,9 @@ import Typography from '@material-ui/core/Typography';
 import { Link } from "react-router-dom";
 import Button from '@material-ui/core/Button';
 
-const Hero = () => {
+const Herro = () => {
     return (
-        <div className='section section_hero'>
+        <section className='section-hero'>
             <div className='container-balco'>
                 <div className='layout layout_hero'>
                     <div className='layout-item'>
@@ -41,8 +41,8 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 };
 
-export default Hero;
+export default Herro;

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import ImageGallery from 'react-image-gallery';
+import HomeSliderItem from "./homeSliderItem";
 import LazyLoad from 'react-lazyload';
 import { themeSettings } from '../lib/settings';
 import storeSettings from '../../../config/store';
@@ -12,40 +13,12 @@ const renderItem = item => React.createElement(
 	React.createElement(
 		LazyLoad,
 		null,
-		React.createElement(
-			'div',
-			{
-				className: 'image-gallery__item',
-				style: {
-					color: themeSettings.home_slider_color || '#000'
-					// backgroundImage: `url(${item.original})`
-				}
-			},
-			React.createElement(
-				'div',
-				{ className: 'image-gallery__title' },
-				item.title
-			),
-			React.createElement(
-				'div',
-				{ className: 'image-gallery__description' },
-				item.image,
-				item.description,
-				item.description && item.description.length > 0 && React.createElement(
-					NavLink,
-					{ to: item.path || '' },
-					React.createElement(
-						'button',
-						{
-							type: 'button',
-							to: item.path || '',
-							className: 'image-gallery__button button button_gallery'
-						},
-						'Go'
-					)
-				)
-			)
-		)
+		React.createElement(HomeSliderItem, {
+			item: item
+		}),
+		React.createElement(HomeSliderItem, {
+			item: item
+		})
 	)
 );
 
@@ -57,7 +30,14 @@ const HomeSlider = ({ images }) => {
 			title: item.title,
 			description: item.description,
 			path: item.path || '',
-			button: item.button
+			button: item.button,
+
+			original1: `/assets/images/${item.image}`,
+			title1: item.title + "gggggggggggggg",
+			description1: item.description,
+			path1: item.path || '',
+			button1: item.button
+
 		}));
 
 		return React.createElement(

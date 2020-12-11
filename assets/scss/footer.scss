@@ -2,6 +2,7 @@
     margin-top: 60px;
     text-align: center;
     padding: 45px 40px;
+    background: #222222;
     @media (min-width: $mobile-width) {
         text-align: left;
         padding: 50px calc(50% - 220px);
@@ -22,7 +23,7 @@
         display: flex;
         justify-content: space-between;
         margin-right: -80px;
-        margin-top: 150px;
+        margin-top: 86px;
         justify-self: flex-end;
         flex: 1;
     }

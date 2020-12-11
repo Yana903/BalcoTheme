@@ -3,9 +3,9 @@ import React, { Fragment } from 'react';
 import Hero from './Hero';
 import { themeSettings } from '../lib/settings';
 import HomeSlider from '../components/homeSlider';
+import Consulting from './Consulting/Consulting';
+import Map from "./Map/Map";
 // import CathalogMain from './CathalogMain/CathalogMain';
-// import Consulting from '../Consulting/Consulting';
-// import Map from "../Map/Map";
 // import Footer from "../Footer/Footer";
 
 // const theme = createMuiTheme({
@@ -104,7 +104,9 @@ const MainPage = () => {
 		Fragment,
 		null,
 		React.createElement(Hero, null),
-		React.createElement(HomeSlider, { images: themeSettings.home_slider })
+		React.createElement(HomeSlider, { images: themeSettings.home_slider }),
+		React.createElement(Consulting, null),
+		React.createElement(Map, null)
 	);
 };
 

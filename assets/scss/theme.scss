@@ -81,7 +81,7 @@ hr.separator {
     }
 }
 
-.section {
+section {
     width: 100%;
     position: relative;
     display: flex;
@@ -91,12 +91,17 @@ hr.separator {
     border-bottom: 1px solid #000;
 }
 
+.cart {
+    display: flex;
+    width: 100%;
+}
+
 p {
     font-family: 'Poppins';
 }
 
 h1 {
-    font-family: 'Oswald';
+    font-family: 'Oswald, sans-serif';
 	font-size: 50px;
 	font-weight: 600;
 	line-height: 1.2;
@@ -105,13 +110,23 @@ h1 {
 }
 
 h2 {
-    font-family: 'Oswald';
+    font-family: 'Oswald, sans-serif';
 	font-size: 30px;
 	font-weight: 400;
 	line-height: 1.2;
 	margin-top: 0;
     margin-bottom: 0
 }
+
+h3 {
+    font-family: 'Oswald';
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 1.2;
+	margin-top: 0;
+    margin-bottom: 0
+}
+
 
 
 .layout {
@@ -262,7 +277,7 @@ MOBILE
 
 /* ================== MainPage CSS  ================== */
 
-@import "herro.scss";
+@import "hero.scss";
 
 /* ================== catalogMain CSS  ================== */
 
