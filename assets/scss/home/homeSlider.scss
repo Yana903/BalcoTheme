@@ -6,8 +6,7 @@
 // }
 
 .home-slider {
-    border-bottom: 1px solid #000;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
     @media screen and (max-width: 768px) {
         padding: 0;
     }
@@ -151,7 +150,14 @@
     max-height: 260px;
     width: 200px;
     height: 260px;
-    border: 1px solid #000;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        position: absolute;               
+        top: 50%;                         
+        transform: translate(0, -50%) 
+    }
 }
 
 .image-gallery__description {

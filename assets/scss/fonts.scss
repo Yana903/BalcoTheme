@@ -1,27 +1,36 @@
-@font-face {
-    font-family: 'Comfortaa';
-    src: url('../fonts/static/Comfortaa-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'Comfortaa';
+//     src: url('/fonts/static/Comfortaa-Regular.ttf');
+//     font-weight: normal;
+//     font-style: normal;
+// };
 
-@font-face {
-    font-family: 'Proxima Nova';
-    src: url('../fonts/ProximaNovaRegular.otf');
-    font-weight: normal;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'Proxima Nova';
+//     src: url('/fonts/ProximaNovaRegular.otf');
+//     font-weight: normal;
+//     font-style: normal;
+// };
 
-@font-face {
-    font-family: 'Poppins';
-    src: url('../fonts/poppins-regular.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
+// @font-face { 
+//     font-family: 'Poppins';
+//     src: url("../fonts/poppins-regular.ttf") format("truetype");
+//     font-weight: normal;
+//     font-style: normal;
+// }
 
 @font-face {
     font-family: 'Oswald';
-    src: url('../fonts/Oswald.ttf');
+    src: url("/assets/fonts/Oswald.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+};
+
+
+@font-face { 
+    font-family: 'Poppins';
+    src: url("/assets/fonts/Montserrat-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
+

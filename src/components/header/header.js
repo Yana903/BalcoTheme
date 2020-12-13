@@ -343,7 +343,7 @@ export default class Header extends React.Component {
 									src="/assets/images/icons/icon_catalog.svg"
 									className="catalog__icon is-hidden-tablet"
 									alt=""
-									title=""
+									title="" 
 								/>
 								Catalog
 							</button> */}

@@ -376,24 +376,8 @@
         line-height: 16px;
         color: #fff;
         position: relative;
-        &:after {
-            content: '';
-            position: absolute;
-            width: 6px;
-            height: 6px;
-            background-color: $mustard;
-            border-radius: 50%;
-            bottom: -11px;
-            left: 50%;
-            transform: translateX(-50%);
-            opacity: 0;
-            transition: all .3s;
-        }
         &:hover {
             color: $mustard;
-            &:after {
-                opacity: 1;
-            }
         }
     }
     @media (min-width: $tablet-width) {

@@ -36,7 +36,7 @@ const Herro = () => {
                     </div>
                     <div className='layout-item'>
                         <div className='hero-image'>
-                        <img src="/assets/images/imgHero.png" alt="imgHero" />
+                            <img src="/assets/images/imgHero.png" alt="imgHero" />
                         </div>
                     </div>
                 </div>

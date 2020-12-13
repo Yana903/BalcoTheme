@@ -33,7 +33,7 @@ const HomeSlider = ({ images }) => {
 			button: item.button,
 
 			original1: `/assets/images/${item.image}`,
-			title1: item.title + "gggggggggggggg",
+			title1: item.title,
 			description1: item.description,
 			path1: item.path || '',
 			button1: item.button

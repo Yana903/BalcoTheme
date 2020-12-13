@@ -1,6 +1,9 @@
 .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: 60px;
-    text-align: center;
     padding: 45px 40px;
     background: #222222;
     @media (min-width: $mobile-width) {
@@ -29,7 +32,24 @@
     }
 }
 
-.footer a {
+.layout_footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .layout-item_footer {
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        &:first-of-type {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.footer a { 
     color: #636363;
     &:hover {
         color: $mustard;
@@ -50,6 +70,34 @@
     }
 }
 
+.footer__info,
+.footer__phones,
+.footer__address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__logo {
+    max-width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__description {
+    p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 130%;
+    }
+}
+
 .footer-contacts {
     list-style: none;
     margin: 0;
@@ -61,14 +109,61 @@
     }
 }
 
-.footer-contacts__phone {
-    text-decoration: underline;
-    white-space: nowrap;
-}
-
 .footer__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     @media (min-width: $mintablet-width) {
         margin-right: 110px;
+    }
+}
+
+.socials {
+    width: 170px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        padding: 5px;
+
+        &:nth-child(1) {
+            background: #579af1;
+
+            &:hover {
+                background: #236dce;
+            }
+        };
+
+        &:nth-child(2) {
+            background: #8714c9;
+
+            &:hover {
+                background: #6f09aa; 
+            }
+        };
+
+        &:nth-child(3) {
+            background: #c9278b;
+
+            &:hover {
+                background: #b31576;
+            }
+        }
+
     }
 }
 
@@ -108,7 +203,7 @@
     margin-bottom: 40px;
 }
 
-.footer__menu {
+.footer-menu {
     @media (min-width: $mobile-width) {
         flex: auto;
         width: 100%;
@@ -130,7 +225,31 @@
     @media (min-width: $mobile-width) {
         text-align: left;
         flex-wrap: wrap;
-        height: 140px;
+    }
+
+    .navigation__menu,
+    .navigation__menu > div
+     {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    ul {
+        width: 100%;
+        flex-direction: row;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+
+        a {
+            color: #fff;
+        }
+
+        a:not(::first-letter) {
+            text-transform: lowercase;
+        };
     }
 }
 

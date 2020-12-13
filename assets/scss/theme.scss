@@ -1,5 +1,6 @@
 @import "~bulma/sass/utilities/initial-variables";
 
+
 /* ======== Find Below Table of Content Points to Go Relevant Section  =========
 [Table of contents]
 SCSS Variables
@@ -17,6 +18,7 @@ Login Page CSS
 Account Page CSS
 ===============================================================================*/
 
+@import "fonts.scss";
 
 /* ================== SCSS Variables  ================== */
 
@@ -88,7 +90,6 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid #000;
 }
 
 .cart {
@@ -101,7 +102,7 @@ p {
 }
 
 h1 {
-    font-family: 'Oswald, sans-serif';
+    font-family: 'Oswald';
 	font-size: 50px;
 	font-weight: 600;
 	line-height: 1.2;
@@ -110,7 +111,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Oswald, sans-serif';
+    font-family: 'Oswald';
 	font-size: 30px;
 	font-weight: 400;
 	line-height: 1.2;
@@ -127,14 +128,16 @@ h3 {
     margin-bottom: 0
 }
 
-
+img {
+    width: 100%;
+}
 
 .layout {
     width: 100%;
     display: flex;
 }
 
-.layout__item {
+.layout-item {
     display: flex;
 }
 
@@ -306,5 +309,6 @@ MOBILE
 /* ================== sections CSS  ================== */
 
 @import "sections.scss";
+
 
 
